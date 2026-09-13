@@ -38,7 +38,7 @@ export default function RoomPreferenceModal({
               >
                 <View style={styles.roomTop}>
                   <Text style={styles.roomName}>{room.name}</Text>
-            
+
                   <Ionicons
                     name={
                       selectedId === room.id
@@ -53,11 +53,11 @@ export default function RoomPreferenceModal({
                     }
                   />
                 </View>
-            
+
                 <Text style={styles.description}>
                   {room.description}
                 </Text>
-            
+
                 <Text style={styles.price}>
                   ${room.nightlyPrice} / night
                 </Text>

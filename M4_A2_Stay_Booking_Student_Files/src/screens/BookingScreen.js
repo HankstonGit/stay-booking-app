@@ -45,24 +45,24 @@ export default function BookingScreen() {
   function handleConfirm() {
     setError('');
     setConfirmed(false);
-    
+
     if (!destination.trim()) {
       setError('Enter a destination before continuing.');
       destinationRef.current?.focus();
       return;
     }
-    
+
     if (!guestName.trim()) {
       setError('Enter the primary guest name before continuing.');
       guestNameRef.current?.focus();
       return;
     }
-    
+
     if (!selectedRoomId) {
       setError('Choose a room preference before continuing.');
       return;
     }
-    
+
     setConfirmed(true);
   }
 
